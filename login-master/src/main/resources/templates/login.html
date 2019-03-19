@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <title>登录页面</title>
+    <link rel="stylesheet" type="text/css" href="../static/Login.css"/>
+</head>
+<body>
+<div id="login">
+    <h1>Login</h1>
+<form action="/user/tologin" name="loginfrom" accept-charset="utf-8" method="post">
+    <input type="text" id="username" name="username" class="inputstyle" placeholder="Account" />
+    <input type="password" id="password" name="password" class="inputstyle" placeholder="Password" />
+    <img onclick = "this.src='/user/createValicode?' + Math.floor(Math.random() * 100)" src="/user/createValicode" />
+    <input type="text" id="validcode" name="validcode" class="inputstyle" placeholder="ValidCode"/>
+    <button class="but" type="submit">LOG IN</button>
+</form>
+    <div/>
+</body>
+</html>
